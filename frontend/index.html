@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SLM Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>SLM_TRANSLATOR</h1>
+            <p>English to Tamil Translation</p>
+        </header>
+
+        <div class="translator">
+
+            <div class="language-label">
+                <span>English</span>
+                <span>தமிழ் (Tamil)</span>
+            </div>
+
+            <div class="text-boxes">
+
+                <textarea
+                    id="englishText"
+                    placeholder="Enter your English sentence here..."
+                ></textarea>
+
+                <div id="tamilText" class="output">
+                    Your Tamil translation will appear here...
+                </div>
+
+            </div>
+
+            <button id="translateBtn" onclick="translateText()">
+                Translate to Tamil
+            </button>
+
+            <p id="status"></p>
+
+        </div>
+
+        <footer>
+            Powered by Helsinki-NLP OPUS-MT, with MyMemory fallback
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
